@@ -110,3 +110,13 @@ html[lang=en] .handoff:after{left:27%;right:27%;top:37%;height:30%;display:flex;
 @media(max-width:700px){.night-frame>.branch{width:105px;height:420px;top:50%}.night-frame>.branch.left{left:-68px}.night-frame>.branch.right{right:-68px}}
 
 .night{background:linear-gradient(#e4f2f333,#d2e8e122),url('/assets/sky-clean.webp') center/cover}
+
+/* Three asymmetrical edge branches, below the corners. */
+.hero,.product{position:relative;isolation:isolate}.layout-branch{position:absolute;pointer-events:none;object-fit:fill;opacity:.95;z-index:0;width:260px}.hero-left{height:1050px;top:145px;left:-105px;transform:none}.hero-right{height:500px;top:80px;right:-125px;transform:scaleX(-1)}.product>.product-right{height:550px;top:30px;right:calc(-10.17vw - 80px);transform:scaleX(-1)}
+.hero-copy,.hero-visual,.benefits,.product>div,.product>figure{position:relative;z-index:1}
+@media(min-width:701px) and (max-width:1000px){.layout-branch{width:180px}.hero-left{height:800px;left:-90px;top:100px}.hero-right{height:360px;right:-90px;top:65px}.product>.product-right{height:420px;right:calc(-10vw - 60px)}}
+@media(max-width:700px){.layout-branch{width:105px;opacity:.75}.hero-left{height:880px;left:-79px;top:120px}.hero-right{height:280px;right:-78px;top:90px}.product>.product-right{height:450px;top:40px;right:-93px}}
+@media(min-width:1001px){.hero-left{left:-12px;width:205px;height:1050px}.hero-right{right:-15px;width:205px;height:500px}.product>.product-right{right:calc(-10.17vw - 10px);width:205px;height:550px}}
+@media(min-width:701px) and (max-width:1000px){.hero-left{left:-15px;width:145px}.hero-right{right:-15px;width:145px}.product>.product-right{right:calc(-10vw - 10px);width:145px}}
+@media(max-width:700px){.hero-left{left:-20px;width:90px}.hero-right{right:-20px;width:90px}.product>.product-right{right:-40px;width:90px}}
+@media(max-width:700px){.hero-left{left:-52px}.hero-right{right:-52px}.product>.product-right{right:-70px}.layout-branch{z-index:0}}

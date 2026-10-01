@@ -46,3 +46,6 @@ The olive corner has been regenerated as one connected, generous bough and place
 
 ## Middle-section semicircle correction
 The corner boughs were removed. New open-C olive branch artwork follows the middle-section reference, mirrored on the left and right of the sky banner. The sky image was regenerated without baked-in foliage to avoid doubling the decorations. Branches anchor to the banner instead of hardcoded page coordinates. On mobile they remain edge accents outside readable card content. Both live test suites pass after updating the section-count selector for the wrapper.
+
+## Asymmetrical branch placement
+Latest round replaces banner framing with one long left branch beginning below the hero's top corner and continuing toward section two; two shorter mirrored C branches sit on the right of the hero and second section. Mobile clips these at the viewport edges to keep copy readable. Banner decoration is removed. 82 + 64 live checks passed.
