@@ -18,3 +18,22 @@
 @media(max-width:700px){.cards article>p{font-size:12px}.example p{font-size:11px}.human-grid p{font-size:12px}.benefits p{font-size:9px}.closing p{font-size:10px}.footer>nav a{padding-block:7px}}
 .footer{width:100%;padding-left:4%;padding-right:0}.footer>.logo,.footer>p{background:#f5f3e5d9}.footer>nav{border-radius:15px 0 0 0;padding-right:4vw}.closing{background-position:center 66%}.preview-note{font-size:6px!important;background:#f5f3e5c0}.nav a,.button,.menu-toggle{touch-action:manipulation}
 @media(max-width:700px){.footer{padding:21px 17px 25px;background:#f5f3e5ce}.footer>nav{padding-right:0}.nav nav a{min-height:36px;display:flex;align-items:center}.nav nav a:first-child:after{display:none}.menu-toggle{width:44px;height:44px;font-size:24px}.button{min-height:44px}.closing .button{min-height:44px}.footer>nav a{min-height:35px;display:flex;align-items:center}.preview-note{bottom:3px!important;left:12%!important}.footer>p{font-size:8px;line-height:1.5}}
+/* Revision: distinct reception scene, alternating foliage, coastal panorama. */
+.site-frame:before,.site-frame:after,.human:before,.human:after{display:none}
+.branch{width:200px;height:350px;object-fit:contain;opacity:.8}
+.branch.left{top:25px;left:-65px;transform:rotate(-10deg)}
+.branch.right{top:980px;right:-100px;transform:scaleX(-1) rotate(-8deg)}
+.product-photo img{object-fit:cover}
+.closing{min-height:510px;padding-top:45px;background:linear-gradient(#f5f3e5 0%,#f5f3e5e0 17%,#f5f3e529 44%,#ffffff00 65%),url('/assets/coast.webp') center 65%/cover;display:flex;flex-direction:column}
+.closing-copy{position:relative;z-index:1}
+.closing h2{font-size:46px;line-height:1.04}
+.closing p{font-size:13px;line-height:1.45;margin:15px 0 18px}
+.closing .footer{margin-top:auto}
+.footer{padding:0;width:100%;gap:0;align-items:stretch;background:transparent;justify-content:space-between;min-height:94px}
+.footer-brand{display:flex;align-items:center;gap:24px;padding:25px 65px 25px 4vw;background:#f5f3e5f0;border-radius:0 72px 0 0;text-align:left;max-width:52%}
+.footer-brand>.logo{font-size:23px;flex-shrink:0}
+.footer-brand>p{font-size:10px;line-height:1.45;margin:0;color:#69745d;background:transparent}
+.footer>nav{padding:25px 4vw 25px 65px;border-radius:72px 0 0 0;margin:0;background:#f5f3e5f0;align-items:center;gap:23px;align-self:stretch}
+.preview-note{left:50%!important;transform:translateX(-50%);bottom:0!important;font-size:6px!important;white-space:nowrap}
+@media(min-width:701px) and (max-width:1000px){.branch{width:140px;height:270px}.branch.left{left:-55px}.branch.right{right:-75px;top:650px}.closing{min-height:400px}.closing h2{font-size:36px}.footer-brand{gap:15px;padding:22px 40px 22px 25px}.footer-brand>.logo{font-size:19px}.footer-brand>p{font-size:8px}.footer>nav{padding:22px 25px 22px 40px;gap:15px;font-size:8px}}
+@media(max-width:700px){.branch{display:none}.product-photo img{aspect-ratio:1.5;object-fit:cover}.closing{min-height:530px;padding-top:36px;background-position:59% center}.closing h2{font-size:33px}.closing p{font-size:11px;padding:0 20px}.footer{flex-wrap:nowrap;min-height:110px;align-items:stretch;margin-top:auto!important}.footer-brand{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:10px;width:51%;max-width:none;border-radius:0 38px 0 0;padding:20px 20px 20px 16px}.footer-brand>.logo{font-size:20px}.footer-brand>p{font-size:8px;padding:0;margin:0}.footer-brand>p br{display:none}.footer>nav{width:42%;flex:none;display:grid;grid-template-columns:1fr 1fr;gap:3px 9px;padding:20px 14px 16px 25px;font-size:8px;border-radius:38px 0 0 0;align-content:center}.footer>nav a{min-height:29px;padding:3px 0}.footer>nav a:last-child{grid-column:1/-1}.preview-note{font-size:5px!important;bottom:1px!important}}
