@@ -40,3 +40,6 @@ The top-right globe button toggles Spanish and English across all four routes, p
 
 ## Corner and control polish
 Top-left foliage uses one aligned natural sprig rather than two disconnected clusters. The language switch is a complete 44px circle with an inset language code. Buttons use a restrained lift, shadow and light sweep on hover, with active feedback and reduced-motion/touch handling.
+
+## Regenerated-image correction
+The olive corner has been regenerated as one connected, generous bough and placed at the top-left plus middle-right lower corner. The human key-handover image has been regenerated full-bleed with no frame or white band; its responsive container has no border and uses a 3:2 ratio. Language control returns to a clear rounded globe + EN/ES button.
