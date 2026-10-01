@@ -1,0 +1,10 @@
+import {chromium} from '@playwright/test';
+import assert from 'node:assert/strict';
+import handler from './api/pilot.js';
+const b=await chromium.launch({headless:true});let checks=0;
+for(const width of [360,390,768,1440]){const page=await b.newPage({viewport:{width,height:900}});const errors=[];page.on('pageerror',e=>errors.push(e.message));for(const route of ['/','/piloto','/demo','/privacidad']){await page.goto(`http://127.0.0.1:5173${route}`);await page.waitForLoadState('networkidle');assert.equal(await page.locator('h1').count(),1);assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true,`overflow: ${width} ${route}`);assert.equal(await page.evaluate(()=>[...document.images].filter(i=>i.loading!=='lazy').every(i=>i.complete&&i.naturalWidth>0)),true,`image: ${width} ${route}`);checks+=3;}assert.deepEqual(errors,[]);checks++;
+await page.goto('http://127.0.0.1:5173');if(width<700){await page.locator('.menu-toggle').click();assert.equal(await page.locator('.menu-toggle').getAttribute('aria-expanded'),'true');checks++;}await page.locator('.faq details').first().locator('summary').click();assert.equal(await page.locator('.faq details').first().getAttribute('open'),'');checks++;await page.close();}
+await b.close();
+const valid={nombre:'Test',apellido:'Test',hotel:'Test',cargo:'Test',email:'test@example.com',telefono:'123',ciudad:'Test',habitaciones:'10',pms:'Test',horario:'22:00',problema:'Llamadas',consent:true};
+for(const [method,body,status] of [['GET',{},405],['POST',{},400],['POST',{...valid,website:'spam'},400],['POST',valid,503]]){let code;const res={setHeader(){},status(c){code=c;return this},json(data){assert.ok(data.error);}};await handler({method,body,headers:{}},res);assert.equal(code,status);checks++;}
+console.log(`PASS: ${checks} responsive, route, asset, browser-console, interaction and server-validation checks`);
