@@ -55,3 +55,6 @@ All introduced decorative branch elements removed. Talk-to-a-person card now use
 
 ## Original iPhone image restored
 Restored the original call.webp in Talk to a person. It stays Spanish in both page languages, as requested. No translated cover or caption, and no image swapping for this card. Hero remains language-aware and added branches remain removed. Final live checks: 82 standard, 64 bilingual, 24 image/no-overlay/no-branch checks.
+
+## Shared Spanish-mode hero
+Hero now uses the existing reception.webp in both EN and ES, with no image swap. Page text still translates, and the original Spanish iPhone remains identical in both. Final live checks: 82 standard, 64 bilingual, 24 image/no-overlay/no-branch checks.
