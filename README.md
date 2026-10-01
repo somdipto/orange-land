@@ -37,3 +37,6 @@ The second section now shows an illustrative guest/Orange conversation over the 
 
 ## Bilingual revision
 The top-right globe button toggles Spanish and English across all four routes, preserves the selection on navigation/reload, updates document language and accessible labels, and retains the same layout. Use node language-test.mjs (or SITE_URL=https://orange-hospitality-preview.vercel.app node language-test.mjs) for 64 bilingual checks. Spanish is the initial default. Branches enlarged again as requested.
+
+## Corner and control polish
+Top-left foliage uses one aligned natural sprig rather than two disconnected clusters. The language switch is a complete 44px circle with an inset language code. Buttons use a restrained lift, shadow and light sweep on hover, with active feedback and reduced-motion/touch handling.

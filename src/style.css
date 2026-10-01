@@ -64,3 +64,23 @@ html[lang=en] .hero h1{font-size:62px;gap:28px}html[lang=en] .card-title{gap:12p
 html[lang=en] .handoff:after{left:27%;right:27%;top:37%;height:30%;display:flex;align-items:center;justify-content:center;background:#faf9f5;white-space:pre;font-size:9px;padding:0}
 @media(min-width:701px) and (max-width:1000px){html[lang=en] .handoff:after{font-size:6px}}
 @media(max-width:700px){html[lang=en] .handoff:after{font-size:10px}}
+/* Final polish: one natural corner sprig, circular language control, quiet motion. */
+.branch{content:url('/assets/botanical-corner.webp');width:285px;height:auto;object-fit:contain;opacity:.92}
+.branch.left{top:-25px;left:-60px;transform:rotate(-9deg);transform-origin:top left}
+.branch.right{top:1040px;right:-90px;transform:scaleX(-1) rotate(-6deg);transform-origin:top right}
+.language-toggle{width:44px;height:44px;min-width:44px;border-radius:50%;padding:0;position:relative;justify-content:center;gap:0;border:1px solid #9ca58970;background:#eeeee1;box-shadow:0 2px 5px #36402605;transition:background .25s,border-color .25s,box-shadow .25s,transform .25s}
+.language-toggle svg{width:22px;height:22px;transition:transform .4s cubic-bezier(.2,.65,.3,1)}
+.language-toggle span{position:absolute;right:-5px;bottom:0;font-size:7px;letter-spacing:.2px;display:grid;place-items:center;width:19px;height:15px;line-height:1;border-radius:8px;background:#f5f3e5;color:#667052;border:1px solid #bdc3ad70}
+.language-toggle:hover{background:#e3e7d7;border-color:#7c8967;box-shadow:0 3px 12px #43532d10;transform:translateY(-1px)}
+.language-toggle:hover svg{transform:rotate(18deg)}
+.button{position:relative;isolation:isolate;overflow:hidden;border-radius:6px;transition:background .28s ease,color .28s ease,border-color .28s ease,box-shadow .28s ease,transform .28s cubic-bezier(.2,.7,.3,1);box-shadow:0 2px 5px #3a47290a}
+.button:before{content:'';position:absolute;inset:0;background:linear-gradient(110deg,transparent 10%,#ffffff21 45%,transparent 75%);transform:translateX(-120%);transition:transform .65s cubic-bezier(.2,.65,.3,1);pointer-events:none;z-index:-1}
+.button:hover{background:#414c34;border-color:#414c34;box-shadow:0 8px 20px #3b492521;transform:translateY(-3px)}
+.button:hover:before{transform:translateX(120%)}
+.button.outline:hover{background:#e6e9dc;color:#3d492e;border-color:#8c9879;box-shadow:0 7px 17px #3b492513}
+.button:active,.language-toggle:active{transform:translateY(0) scale(.98);box-shadow:0 2px 6px #3b492515}
+@media(min-width:701px) and (max-width:1000px){.branch{width:205px}.branch.left{left:-45px;top:-15px}.branch.right{right:-65px;top:700px}.language-toggle{width:40px;height:40px;min-width:40px}.language-toggle svg{width:19px;height:19px}}
+@media(max-width:700px){.branch{width:135px;opacity:.6}.branch.left{left:-94px;top:105px;transform:rotate(-8deg)}.branch.right{right:-100px;top:800px}.language-toggle{width:44px;height:44px;min-width:44px}.nav-tools{margin-right:3px}.menu-toggle{margin-right:16px}}
+@media(prefers-reduced-motion:reduce){.button,.button:before,.language-toggle,.language-toggle svg{transition:none!important}.button:hover,.language-toggle:hover,.language-toggle:hover svg{transform:none}}
+@media(hover:none){.button:hover,.language-toggle:hover{transform:none;box-shadow:none}.button:hover:before{transform:translateX(-120%)}}
+.language-toggle svg{margin-top:-5px;width:20px;height:20px}.language-toggle span{right:auto;bottom:5px;left:50%;transform:translateX(-50%);width:auto;height:auto;font-size:6px;border:0;background:transparent;letter-spacing:.6px;color:#6c765a}
