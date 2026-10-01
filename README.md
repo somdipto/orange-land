@@ -52,3 +52,6 @@ Latest round replaces banner framing with one long left branch beginning below t
 
 ## Branch removal and localized imagery
 All introduced decorative branch elements removed. Talk-to-a-person card now uses a guest/reception-desk photo without baked text; the connecting caption is translated live. Hero swaps Spanish RECEPCIÓN and English RECEPTION image assets with the language toggle. Other photos have no language-specific text. Removed the prior English CSS patch over the old call image. Added inspect-language-assets.mjs: 18 asset/status/no-branch checks across both languages and two widths, including switching back. Existing 82 + 64 suites also passed.
+
+## Original iPhone image restored
+Restored the original call.webp in Talk to a person. It stays Spanish in both page languages, as requested. No translated cover or caption, and no image swapping for this card. Hero remains language-aware and added branches remain removed. Final live checks: 82 standard, 64 bilingual, 24 image/no-overlay/no-branch checks.
