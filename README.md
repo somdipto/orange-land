@@ -31,3 +31,6 @@ Verified at 360, 390, 768 and 1440 pixel viewport widths across all four routes.
 
 ## Follow-up design revision
 The second product-section image now restores the earlier Mediterranean reception setting, without a second telephone. Decorative edge foliage is reduced to two alternating accents. The coastal CTA/footer is taller, with separate cream corner panels curved on the inner top corners and more visible sea/coastline. Mobile preserves the same separated corner panels and panorama.
+
+## Conversation-scene revision
+The second section now shows an illustrative guest/Orange conversation over the Mediterranean reception photo, with a 23:30 badge, voice waveform and language chips. Text stays live and readable rather than being embedded into generated pixels. Both alternating branch accents are larger. The hero icon strip has a corrected chat SVG viewBox and stroke clearance. Spacing between product, night and human-control sections is increased.
