@@ -17,8 +17,14 @@ Routes: /, /piloto, /demo, /privacidad.
 - Real LinkedIn and contact destinations. No invented links.
 - Final model at /public/models/orange.glb. Replacement architecture lives in src/components/OrangeDevice3D.js.
 
-Images depict illustrative settings, not a delivered Orange product or customer property. Actual Android reference device supplied by the owner is composited into those settings. No invented metrics, testimonials or hotel logos.
+Images depict illustrative settings, not a delivered Orange product or customer property. Photos were generated to match the supplied October 1 mockup, including the complete telephone cord, handset close-up and call-screen illustration. They are close visual recreations, not identical source photographs. No invented metrics, testimonials or hotel logos.
 
 PILOT_WEBHOOK_URL and optional PILOT_WEBHOOK_SECRET are server environment variables only. Configure only an approved endpoint; the server validates required fields, consent, origin and a honeypot. Before activating public lead intake, implement rate limiting, retention controls and a full privacy notice. The destination must durably save before returning success.
 
 QR derives location.origin + /piloto. QR download is vector SVG. Fonts are self-hosted. Future analytics can listen for orange:pageview, with consent controls before any external tracker.
+
+## October 1 fidelity revision
+The homepage follows the definitive supplied mockup: parenthesized hero, reception photo, three-icon strip, numbered four-item product section, sky-backed three cards, human-control/key exchange section, coastal CTA and split footer. No extra homepage sections. Mobile uses readable stacked cards and uncropped hero imagery.
+
+Preview: https://orange-hospitality-preview.vercel.app/
+Verified at 360, 390, 768 and 1440 pixel viewport widths across all four routes. Use tests-live.mjs for the deployed preview.
