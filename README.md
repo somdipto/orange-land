@@ -34,3 +34,6 @@ The second product-section image now restores the earlier Mediterranean receptio
 
 ## Conversation-scene revision
 The second section now shows an illustrative guest/Orange conversation over the Mediterranean reception photo, with a 23:30 badge, voice waveform and language chips. Text stays live and readable rather than being embedded into generated pixels. Both alternating branch accents are larger. The hero icon strip has a corrected chat SVG viewBox and stroke clearance. Spacing between product, night and human-control sections is increased.
+
+## Bilingual revision
+The top-right globe button toggles Spanish and English across all four routes, preserves the selection on navigation/reload, updates document language and accessible labels, and retains the same layout. Use node language-test.mjs (or SITE_URL=https://orange-hospitality-preview.vercel.app node language-test.mjs) for 64 bilingual checks. Spanish is the initial default. Branches enlarged again as requested.
