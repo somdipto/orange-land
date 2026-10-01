@@ -131,3 +131,16 @@ html[lang=en] .handoff:after{left:27%;right:27%;top:37%;height:30%;display:flex;
 .handoff{border-radius:0;background:transparent;height:auto}.handoff>img{object-fit:contain;background:#faf9f2;height:190px;width:100%}
 @media(min-width:701px) and (max-width:1000px){.handoff>img{height:140px}}
 @media(max-width:700px){.handoff>img{height:205px}}
+
+/* Two flowering branches matching the supplied reference. */
+.flowering-decoration{position:absolute;pointer-events:none;width:270px;height:auto;object-fit:contain;z-index:0}.flowering-hero{left:-90px;top:42px}.flowering-product{right:calc(-10.17vw - 60px);top:35px;transform:scaleX(-1)}
+@media(min-width:701px) and (max-width:1000px){.flowering-decoration{width:185px}.flowering-hero{left:-80px;top:55px}.flowering-product{right:calc(-10vw - 55px)}}
+@media(max-width:700px){.flowering-decoration{width:105px}.flowering-hero{left:-72px;top:75px}.flowering-product{right:-90px;top:75px}}
+/* Mobile foliage gets its own breathing room, never over copy. */
+@media(max-width:700px){.hero{padding-bottom:135px}.flowering-hero{width:135px;left:-24px;top:auto;bottom:-20px}.product{padding-bottom:155px}.flowering-product{width:135px;right:-35px;top:auto;bottom:-15px}}
+/* Motion is enabled only after observation is ready; no-JS stays visible. */
+.reveal-ready .scroll-reveal{opacity:0;transform:translateY(22px);transition:opacity .72s ease,transform .85s cubic-bezier(.2,.7,.2,1);transition-delay:var(--reveal-delay,0ms)}
+.reveal-ready .scroll-reveal.reveal-visible{opacity:1;transform:translateY(0)}
+.reveal-ready .reveal-photo{transform:translateY(25px) scale(.985)}
+.reveal-ready .reveal-photo.reveal-visible{transform:translateY(0) scale(1)}
+@media(prefers-reduced-motion:reduce){.reveal-ready .scroll-reveal{opacity:1;transform:none;transition:none}}

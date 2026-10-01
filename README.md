@@ -58,3 +58,6 @@ Restored the original call.webp in Talk to a person. It stays Spanish in both pa
 
 ## Shared Spanish-mode hero
 Hero now uses the existing reception.webp in both EN and ES, with no image swap. Page text still translates, and the original Spanish iPhone remains identical in both. Final live checks: 82 standard, 64 bilingual, 24 image/no-overlay/no-branch checks.
+
+## Flowering branches and scroll motion
+Replaced botanical decoration with the approved transparent flowering branch: left hero and mirrored right section two. Mobile branches are larger and sit in dedicated clear gaps, not behind text. Scroll reveals run on desktop and mobile: soft upward entry, subtle photo scale and staggered cards/benefits. One-time entry only, reduced-motion and no-JS fallbacks keep content visible. Hero and Spanish iPhone assets remain unchanged. Live verification: 82 standard, 64 bilingual and motion entry/fallback/overflow checks passed.
