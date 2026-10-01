@@ -43,3 +43,6 @@ Top-left foliage uses one aligned natural sprig rather than two disconnected clu
 
 ## Regenerated-image correction
 The olive corner has been regenerated as one connected, generous bough and placed at the top-left plus middle-right lower corner. The human key-handover image has been regenerated full-bleed with no frame or white band; its responsive container has no border and uses a 3:2 ratio. Language control returns to a clear rounded globe + EN/ES button.
+
+## Middle-section semicircle correction
+The corner boughs were removed. New open-C olive branch artwork follows the middle-section reference, mirrored on the left and right of the sky banner. The sky image was regenerated without baked-in foliage to avoid doubling the decorations. Branches anchor to the banner instead of hardcoded page coordinates. On mobile they remain edge accents outside readable card content. Both live test suites pass after updating the section-count selector for the wrapper.

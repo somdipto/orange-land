@@ -98,3 +98,15 @@ html[lang=en] .handoff:after{left:27%;right:27%;top:37%;height:30%;display:flex;
 @media(min-width:701px) and (max-width:1000px){.branch{width:230px}.branch.left{left:-35px;top:-10px}.branch.right{top:820px;right:-40px}.human-grid{gap:25px;grid-template-columns:1fr 1.05fr 1fr}.language-toggle{min-width:64px;padding:0 10px;gap:6px}.language-toggle svg{width:18px;height:18px}.language-toggle span{font-size:9px}}
 @media(max-width:700px){.branch{width:150px;opacity:.7}.branch.left{left:-96px;top:95px}.branch.right{right:-104px;top:1350px}.human-grid{grid-template-columns:1fr;gap:28px}.human-grid>img{height:auto;aspect-ratio:1.5;border:0;border-radius:10px;max-width:none;object-fit:cover}.language-toggle{min-width:69px;min-height:44px;height:44px;border-radius:9px;padding:0 10px;gap:7px}.language-toggle span{font-size:10px}.menu-toggle{margin-right:10px}}
 @media(min-width:1001px){.branch.left{top:-65px;left:-90px;width:355px}}
+
+/* Reference correction: open semicircular branches frame the middle sky section. */
+.night-frame{position:relative;isolation:isolate}.night-frame>.branch{position:absolute;content:none;display:block;top:50%;width:380px;height:600px;object-fit:fill;opacity:1;pointer-events:none;z-index:2;transform:translateY(-50%)}
+.night-frame>.branch.left{left:-185px}.night-frame>.branch.right{right:-185px;transform:translateY(-50%) scaleX(-1)}
+.night-frame .night{position:relative;z-index:1}
+@media(min-width:701px) and (max-width:1000px){.night-frame>.branch{width:255px;height:450px}.night-frame>.branch.left{left:-135px}.night-frame>.branch.right{right:-135px}}
+@media(max-width:700px){.night-frame>.branch{width:145px;height:340px;top:50%;opacity:.9}.night-frame>.branch.left{left:-112px}.night-frame>.branch.right{right:-112px}.night-frame .night{position:relative}}
+
+@media(min-width:1001px){.night-frame>.branch{width:235px;height:670px}.night-frame>.branch.left{left:-30px}.night-frame>.branch.right{right:-30px}}
+@media(max-width:700px){.night-frame>.branch{width:105px;height:420px;top:50%}.night-frame>.branch.left{left:-68px}.night-frame>.branch.right{right:-68px}}
+
+.night{background:linear-gradient(#e4f2f333,#d2e8e122),url('/assets/sky-clean.webp') center/cover}
