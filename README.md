@@ -49,3 +49,6 @@ The corner boughs were removed. New open-C olive branch artwork follows the midd
 
 ## Asymmetrical branch placement
 Latest round replaces banner framing with one long left branch beginning below the hero's top corner and continuing toward section two; two shorter mirrored C branches sit on the right of the hero and second section. Mobile clips these at the viewport edges to keep copy readable. Banner decoration is removed. 82 + 64 live checks passed.
+
+## Branch removal and localized imagery
+All introduced decorative branch elements removed. Talk-to-a-person card now uses a guest/reception-desk photo without baked text; the connecting caption is translated live. Hero swaps Spanish RECEPCIÓN and English RECEPTION image assets with the language toggle. Other photos have no language-specific text. Removed the prior English CSS patch over the old call image. Added inspect-language-assets.mjs: 18 asset/status/no-branch checks across both languages and two widths, including switching back. Existing 82 + 64 suites also passed.

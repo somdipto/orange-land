@@ -120,3 +120,9 @@ html[lang=en] .handoff:after{left:27%;right:27%;top:37%;height:30%;display:flex;
 @media(min-width:701px) and (max-width:1000px){.hero-left{left:-15px;width:145px}.hero-right{right:-15px;width:145px}.product>.product-right{right:calc(-10vw - 10px);width:145px}}
 @media(max-width:700px){.hero-left{left:-20px;width:90px}.hero-right{right:-20px;width:90px}.product>.product-right{right:-40px;width:90px}}
 @media(max-width:700px){.hero-left{left:-52px}.hero-right{right:-52px}.product>.product-right{right:-70px}.layout-branch{z-index:0}}
+
+/* No decorative branches. Handoff uses a real reception scene and live translated text. */
+.branch,.layout-branch{display:none!important}.handoff:after,html[lang=en] .handoff:after{display:none!important;content:none!important}
+.handoff{overflow:hidden;border-radius:12px;background:#eee9de;position:relative;height:190px}.handoff>img{width:100%;height:100%;object-fit:cover;background:none;display:block}.reception-status{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);white-space:nowrap;display:flex;align-items:center;gap:7px;border:1px solid #fff9;background:#faf8eeeF;padding:9px 12px;border-radius:22px;color:#566247;font-size:9px;box-shadow:0 3px 12px #232b2415}.reception-status i{width:6px;height:6px;background:#849466;border-radius:50%}
+@media(min-width:701px) and (max-width:1000px){.handoff{height:140px}.reception-status{font-size:7px;padding:6px 8px}}
+@media(max-width:700px){.handoff{height:205px}.reception-status{font-size:11px}}

@@ -1,4 +1,6 @@
 const translations={
+'Conectando con recepción...':'Connecting to reception...',
+'Conexión con el equipo de recepción':'Connection to the reception team',
 'Orange, inicio':'Orange, home','Abrir menú':'Open menu','Navegación principal':'Main navigation','Enlaces del pie':'Footer links',
 'Producto':'Product','Cómo funciona':'How it works','Piloto':'Pilot','Solicitar piloto':'Request a pilot','Solicitar un piloto':'Request a pilot','Ver demostración':'View demonstration','Privacidad':'Privacy','Contacto':'Contact',
 'La recepción ':'Reception ','sigue despierta':'stays awake',
@@ -44,6 +46,7 @@ export function applyLanguage(){
   const saved=originalAttributes.get(el);
   for(const [key,value] of [['alt',saved.alt],['aria-label',saved.label]])if(value)el.setAttribute(key,language==='en'?translate(value):value);
  });
+ document.querySelectorAll('img[data-src-es][data-src-en]').forEach(img=>{const desired=img.getAttribute(`data-src-${language}`);if(img.getAttribute('src')!==desired)img.setAttribute('src',desired)});
  document.documentElement.lang=language;document.querySelector('.skip-link').textContent=language==='en'?'Skip to content':'Saltar al contenido';localStorage.setItem('orange-language',language);
  document.querySelectorAll('.language-toggle').forEach(el=>{el.querySelector('span').textContent=language==='es'?'EN':'ES';el.setAttribute('aria-label',language==='es'?'Switch to English':'Cambiar a español');el.setAttribute('title',language==='es'?'English':'Español')});
  document.title=language==='en'?'Orange | Reception stays awake':'Orange | La recepción sigue despierta';
