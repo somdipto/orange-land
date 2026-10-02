@@ -150,3 +150,44 @@ html[lang=en] .handoff:after{left:27%;right:27%;top:37%;height:30%;display:flex;
 
 .brand-symbol{width:48px;height:44px;object-fit:contain}.brand-wordmark{width:134px;height:auto}.nav .brand-wordmark{display:none}.hero-wordmark{width:280px;max-width:65%;height:auto;margin:0 auto 24px}.hero .parenthesis{top:158px}.footer .brand-symbol{width:40px;height:37px}.footer .brand-wordmark{width:130px}@media(max-width:700px){.hero-wordmark{width:220px;margin-bottom:22px}.brand-symbol{width:38px;height:34px}}
 .story-identity .conversation-mark{position:static;display:block;width:28px;height:25px;max-width:28px;object-fit:contain;flex:none;border-radius:0}
+/* Anchor both decorations to the viewport edge, never the inset content grid. */
+.flowering-hero{left:auto;right:-20px;transform:scaleX(-1)}
+.product>.flowering-product{right:calc(50% - 50vw - 20px)}
+@media(min-width:701px) and (max-width:1000px){.flowering-hero{left:auto;right:-18px}.product>.flowering-product{right:calc(50% - 50vw - 18px)}}
+@media(max-width:700px){.flowering-hero{left:auto;right:-14px;bottom:-20px;top:auto}.product>.flowering-product{right:calc(50% - 50vw - 14px);bottom:-15px;top:auto}}
+/* Owner correction: retain the original hero-left decoration. */
+.flowering-hero{left:-90px;right:auto;transform:none}
+@media(min-width:701px) and (max-width:1000px){.flowering-hero{left:-80px;right:auto}}
+@media(max-width:700px){.flowering-hero{left:-24px;right:auto}}
+/* Desktop product grid is asymmetrically offset, not centered. */
+@media(min-width:1001px){.product>.flowering-product{right:calc(14.444vw + min(1110px,77.083vw) - 100vw - 20px)}}
+/* Content-proximate placement on large monitors; decoration in front. */
+.flowering-decoration{z-index:10}
+.product>.flowering-product{right:-115px;top:45px}
+@media(min-width:701px) and (max-width:1000px){.product>.flowering-product{right:-75px;top:45px}}
+@media(max-width:700px){.product{padding-bottom:42px}.product>.flowering-product{width:125px;right:-36px;top:auto;bottom:5px}}
+@media(min-width:701px) and (max-width:1000px){.product>.flowering-product{width:150px;right:-88px}}
+/* Connect the product decoration into the blue section below. */
+@media(min-width:701px){.product{padding-bottom:30px}.product>.flowering-product{top:auto;bottom:-22px}.human{padding-top:40px}}
+/* Full-width wrapper is the anchor. Trimmed artwork is already mirrored. */
+.product-edge-frame{position:relative;z-index:3}
+.product-edge-frame>.flowering-product{right:-1px;left:auto;top:auto;bottom:-22px;transform:none;width:clamp(270px,calc(100vw - 14.444vw - min(1110px,77.083vw) + 140px),1800px);height:360px;object-fit:fill;max-width:none;z-index:20}
+@media(min-width:701px) and (max-width:1000px){.product-edge-frame>.flowering-product{width:180px;height:240px}}
+@media(max-width:700px){.product-edge-frame>.flowering-product{width:125px;height:167px;bottom:0}}
+/* Preserve leaf proportions rather than stretch artwork on ultrawide. */
+.product-edge-frame>.flowering-product{width:270px;object-fit:contain}
+@media(min-width:701px) and (max-width:1000px){.product-edge-frame>.flowering-product{width:180px}}
+@media(max-width:700px){.product-edge-frame>.flowering-product{width:125px}}
+.product-edge-frame>.flowering-product{height:auto;object-fit:initial}
+/* Keep native scrollbar chrome from creating a dark gutter beside the artwork.
+   Scrolling remains available with touch, wheel, trackpad and keyboard. */
+html{scrollbar-width:none;scrollbar-gutter:auto}
+html::-webkit-scrollbar{display:none;width:0;height:0}
+/* Content is independently centered; botanical overlay never enters layout. */
+@media(min-width:701px){.product-edge-frame>.product{margin-inline:auto}}
+.product-edge-frame>.flowering-product{position:absolute;right:0;pointer-events:none;opacity:1;filter:none;mix-blend-mode:normal}
+/* Cards are solid surfaces, including while scroll motion starts. */
+.cards article{background:#fffdf4;opacity:1!important;backdrop-filter:none;transition-property:transform}
+.story-guest{background:#fffdf4}
+.story-orange{background:#faf6e9}
+.handoff{background:#faf9f2}
