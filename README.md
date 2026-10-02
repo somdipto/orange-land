@@ -61,3 +61,11 @@ Hero now uses the existing reception.webp in both EN and ES, with no image swap.
 
 ## Flowering branches and scroll motion
 Replaced botanical decoration with the approved transparent flowering branch: left hero and mirrored right section two. Mobile branches are larger and sit in dedicated clear gaps, not behind text. Scroll reveals run on desktop and mobile: soft upward entry, subtle photo scale and staggered cards/benefits. One-time entry only, reduced-motion and no-JS fallbacks keep content visible. Hero and Spanish iPhone assets remain unchanged. Live verification: 82 standard, 64 bilingual and motion entry/fallback/overflow checks passed.
+
+## Manzanilla preview rebrand (October 2)
+
+Approved logo is split into transparent mark, wordmark and combined variants from the supplied artwork. Header remains mark-only; hero wordmark and footer lockup were previewed. Favicon and social card use the same brand.
+
+Per-route static Spanish HTML in `prerender/` includes visible content, distinct metadata, absolute canonical/social URLs and Organization/WebSite/WebPage structured data. `npm run build` keeps those snapshots while inserting current hashed assets. If page content or metadata changes, regenerate snapshots from the rendered pages before publishing; do not let static crawler content diverge from runtime content. English toggle remains; `?lang=en` selects it and hreflang names the URL. Static first-response English HTML is not generated yet, so indexing of English depends on JavaScript rendering.
+
+The preview remains noindex, robots-disallowed and submissions disabled. Sitemap is prepared, not submitted. Public indexing, final domain, legal notice and pilot destination require owner decisions. llms.txt is supplementary text, not a guarantee of answer-engine discovery. WhatsApp may cache prior images; correct OG metadata does not guarantee immediate refresh.

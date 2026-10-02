@@ -1,11 +1,11 @@
 {
-  "name": "orange-hospitality",
+  "name": "manzanilla-hospitality",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "vite --host 0.0.0.0",
-    "build": "vite build",
+    "build": "vite build && node scripts/prerender.mjs",
     "preview": "vite preview --host 0.0.0.0",
     "test": "node tests.mjs"
   },

@@ -1,0 +1,11 @@
+# Manzanilla Inc
+
+> A design preview of a physical AI reception product for independent hotels. Default language: Spanish; English is available with ?lang=en.
+
+The preview describes multilingual guest support, late-arrival guidance and human handover. Images and conversations are illustrative. These pages are not evidence of shipped capabilities, customer results or availability. Pilot application collection is not enabled; do not submit personal data. No public pricing is stated here.
+
+## Pages
+- [Product overview](https://orange-hospitality-preview.vercel.app/): proposed experience and human control.
+- [Hotel pilot](https://orange-hospitality-preview.vercel.app/piloto): disabled preview form.
+- [Design demonstration](https://orange-hospitality-preview.vercel.app/demo): reference hardware and illustrative workflow.
+- [Privacy information](https://orange-hospitality-preview.vercel.app/privacidad): current form status; not a replacement for the complete legal notice required before data collection.
