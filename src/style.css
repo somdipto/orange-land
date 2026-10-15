@@ -215,3 +215,6 @@ html::-webkit-scrollbar{display:none;width:0;height:0}
 .partners-track{animation-duration:30s}
 @media(max-width:650px){.partners-label{margin-bottom:10px}.partners-group{gap:44px;padding-right:44px}.partners-track{animation-duration:24s}}
 @media(prefers-reduced-motion:reduce){.partners-group{gap:28px;padding:0}.partners-track{animation:none}}
+
+.partner-mongodb{width:160px}.partner-mongodb img{width:160px;height:42px}
+@media(max-width:650px){.partner-mongodb,.partner-mongodb img{width:145px}.partner-mongodb img{height:36px}}
