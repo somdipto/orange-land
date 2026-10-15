@@ -191,3 +191,27 @@ html::-webkit-scrollbar{display:none;width:0;height:0}
 .story-guest{background:#fffdf4}
 .story-orange{background:#faf6e9}
 .handoff{background:#faf9f2}
+
+/* Compact grant-partner marquee; approved marks retain their original colours. */
+.partners-strip{border-top:1px solid #233d3214;border-bottom:1px solid #233d3214;background:#eeeee3;padding:22px 0;overflow:hidden}
+.partners-inner{display:flex;align-items:center;gap:42px}
+.partners-label{flex:0 0 auto;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#4e5b50;margin:0;font-weight:500}
+.partners-window{overflow:hidden;min-width:0;flex:1;mask-image:linear-gradient(to right,transparent,#000 5%,#000 95%,transparent)}
+.partners-track{display:flex;width:max-content;animation:partners-drift 24s linear infinite}
+.partners-group{display:flex;align-items:center;gap:70px;padding-right:70px;flex-shrink:0}
+.partner{display:flex;align-items:center;justify-content:center;gap:10px;opacity:.8;height:42px;flex-shrink:0;white-space:nowrap;color:#141414;font-family:Arial,sans-serif;font-weight:600;font-size:23px}
+.partner img{object-fit:contain;display:block;flex-shrink:0}
+.partner-cartesia{width:152px}.partner-fish{width:173px}.partner-maritime{width:152px;font-size:24px;letter-spacing:-1px}
+.partner-maritime img{width:24px;height:32px;background:#141414;border-radius:5px;padding:3px;box-sizing:content-box}.partner-mnemoverse{width:190px;font-size:22px;letter-spacing:-.6px}
+.partners-strip:hover .partners-track,.partners-strip:focus-within .partners-track{animation-play-state:paused}
+@keyframes partners-drift{to{transform:translateX(-25%)}}
+@media(max-width:650px){.partners-strip{padding:17px 0}.partners-inner{display:block}.partners-label{text-align:center;font-size:10px;margin-bottom:10px}.partners-window{width:100%}.partners-group{gap:44px;padding-right:44px}.partners-track{animation-duration:22s}.partner{height:36px;font-size:20px}.partner-cartesia{width:135px}.partner-cartesia img{width:135px}.partner-fish{width:151px}.partner-fish img{width:36px;height:36px}.partner-maritime{width:135px;font-size:21px}}
+@media(prefers-reduced-motion:reduce){.partners-track{animation:none;width:auto}.partners-group{gap:28px;padding:0;flex-wrap:wrap;justify-content:center;width:100%}.partners-group[aria-hidden]{display:none}.partners-window{mask-image:none}.partners-inner{display:block}.partners-label{text-align:center;margin-bottom:14px}}
+/* Review: centered heading and one visible complete brand set on desktop. */
+.partners-inner{display:block}
+.partners-label{text-align:center;margin:0 0 14px}
+.partners-window{width:min(100%,950px);margin:0 auto;mask-image:none}
+.partners-group{gap:90px;padding-right:90px}
+.partners-track{animation-duration:30s}
+@media(max-width:650px){.partners-label{margin-bottom:10px}.partners-group{gap:44px;padding-right:44px}.partners-track{animation-duration:24s}}
+@media(prefers-reduced-motion:reduce){.partners-group{gap:28px;padding:0}.partners-track{animation:none}}
