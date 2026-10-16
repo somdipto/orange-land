@@ -1,4 +1,5 @@
 const translations={
+'Descargar app':'Download app',
 'Conectando con recepción...':'Connecting to reception...',
 'Conexión con el equipo de recepción':'Connection to the reception team',
 'Manzanilla, inicio':'Manzanilla, home','Abrir menú':'Open menu','Navegación principal':'Main navigation','Enlaces del pie':'Footer links',

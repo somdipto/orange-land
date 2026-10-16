@@ -218,3 +218,6 @@ html::-webkit-scrollbar{display:none;width:0;height:0}
 
 .partner-mongodb{width:160px}.partner-mongodb img{width:160px;height:42px}
 @media(max-width:650px){.partner-mongodb,.partner-mongodb img{width:145px}.partner-mongodb img{height:36px}}
+
+/* Keep the app download and existing pilot/demo links readable at every width. */
+.hero-copy .actions{flex-wrap:wrap}
